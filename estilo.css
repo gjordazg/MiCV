@@ -1,9 +1,82 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     width: 100%;
+    height: auto;
+}
+
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.contenedor_header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.columna_100 {
+    width: 100%;
+    height: 50%;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.foto {
+    width: auto;
+    height: 100%;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 480px) {
+
+    .contenedor_header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .columna_25 {
+        width: 25%;
+        height: 100%;
+        display: inline;
+        padding: 10px 15px;
+    }
+
+    .foto {
+        width: 60%;
+        height: 100%;
+        margin: 0 20%;
+    }
+
+    .columna_75 {
+        width: 75%;
+        height: 100%;
+        display: inline;
+        padding: 20px;
+    }
+    
+    h1{
+        padding: 10px;
+        width: auto;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    h2{
+        width: auto;
+        font-size: 1.8em;
+        text-align: center;
+        padding: 10px;
+    }
 }
