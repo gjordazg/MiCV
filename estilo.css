@@ -164,5 +164,38 @@ p{
     
 }
 
+    /* main*/
+    main{
+        height: auto;
+        width: 100%;
+    }
+    
+    /*footer*/
+    
+    footer{
+        display: block;
+        position: relative;
+        height: 10%;
+        background-color: black;
+        color: snow;
+        text-shadow: -2px 2px 9px #ff000f;
+    }
+    
+    .contenedor_footer{
+        display: flex;
+        flex-wrap:wrap;
+        text-align: center;
+    }
+    
+    .contacto{
+        display: flex;
+        margin: 0 15%;
+        width: 20%;
+    }
+    
+    .contacto i{
+        font-size: 2em;
+        padding: 5px 0;
+    }
 
 }
