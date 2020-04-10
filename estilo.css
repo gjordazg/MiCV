@@ -82,13 +82,82 @@ div. img {
     height: auto;
 }
 
-#p1 {
+.tooltiptext {
     position: absolute;
     visibility: hidden;
 }
 
 
-@media only screen and (min-width: 480px) {
+/* MAIN */
+
+
+main h1 {
+    color: firebrick;
+    font-size: 2.2em;
+    padding: 10px;
+    background-color: silver;
+    text-shadow: -2px 2px 6px black;
+}
+
+main h2 {
+    color: cornflowerblue;
+    font-size: 1.6em;
+    padding: 10px 20px 5px;
+    height: auto;
+}
+
+main h3 {
+    color: dodgerblue;
+    font-size: 1.2em;
+    padding: 0 20px 5px;
+    height: auto;
+}
+
+main p {
+    height: auto;
+    font-size: 0.9em;
+    padding: 0 20px 5px;
+}
+
+.contenedor_habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 2% 5%
+}
+
+.contenedor_habilidades img{
+    width: 22%;
+    height: auto;
+}
+.java ul{
+    height: auto;
+    font-size: 0.9em;
+    margin-left: 20px;
+    padding: 0 20px;
+}
+/* FOOTER */
+
+    footer {
+        display: block;
+        position: relative;
+        height: auto;
+        background-color: black;
+        color: snow;
+        text-shadow: -2px 2px 9px #ff000f;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .contenedor_footer {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+
+@media only screen and (min-width: 600px) {
 
     /* HEADER GENERAL */
 
@@ -169,26 +238,21 @@ div. img {
     }
 
     .tooltiptext {
-        font-size: 0.75em;
-        position: absolute;
+        font-size: 0.6em;
         z-index: 10;
-        visibility: hidden;
         width: auto;
         height: auto;
-        padding: 5px;
+        padding: 10px;
         text-align: center;
         background-color: gold;
         border-radius: 15px;
         color: black;
         text-shadow: -2px 2px 9px #ff000f;
-    }
-
-    #p1 {
         top: 98%;
-        left: 50%;
+        left: 52%;
     }
 
-    #p1::after {
+    .tooltiptext::after {
         content: " ";
         position: absolute;
         bottom: 100%;
@@ -204,34 +268,24 @@ div. img {
     }
 
     /* MAIN */
-    main {
-        height: auto;
-        width: 100%;
-    }
+
 
     main h1 {
-        color: firebrick;
         font-size: 2.8em;
         padding: 20px;
-        background-color: silver;
-        text-shadow: -2px 2px 6px black;
     }
 
     main h2 {
-        color: cornflowerblue;
         font-size: 2em;
         padding: 20px 20px 10px;
-        height: auto;
     }
 
     main h3 {
-        color: dodgerblue;
         font-size: 1.5em;
         padding: 0 20px 10px;
     }
 
     main p {
-        height: auto;
         font-size: 1.1em;
     }
 
@@ -254,6 +308,7 @@ div. img {
 
     .contenedor_habilidades img {
         padding: 20px;
+        max-width: 150px;
     }
 
     /* EXPERIENCIA */
@@ -294,8 +349,9 @@ div. img {
         visibility: visible;
     }
 
-    .info {
-        width: 200%;
+    .quimico .info {
+        width: 190%;
+        margin: 0 5%;
         height: 0;
         visibility: hidden;
     }
@@ -303,6 +359,8 @@ div. img {
     .java .info {
         width: 80%;
         margin: 0 10%;
+        height: 0;
+        visibility: hidden;
     }
 
     .quimico:hover .info,
@@ -311,22 +369,11 @@ div. img {
         visibility: visible;
     }
 
-    /*footer*/
-
-    footer {
-        display: block;
-        position: relative;
-        height: 100px;
-        background-color: black;
-        color: snow;
-        text-shadow: -2px 2px 9px #ff000f;
-        text-align: center;
-    }
+    /* FOOTER */
 
     .contenedor_footer {
-        width: 100%;
-        height: auto;
         padding: 20px;
+        font-size: 1.2em;
     }
 
 
