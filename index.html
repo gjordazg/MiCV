@@ -15,13 +15,13 @@
 <body>
     <header>
         <div class="contenedor_header">
-            <div class="columna_25_100">
+            <div class="columna_100_25">
                 <img class="foto" src="img/foto.jpg" alt="photo" title="Gabriel Ordaz">
             </div>
-            <div class="columna_75_100">
+            <div class="columna_100_75">
                 <h1>Gabriel Ordaz</h1>
-                <h2>Desarrollador Java y Web</h2>
-                <p>Licenciado en Química, egresado de la Universidad de Oriente (Venezuela). Docente universitario e investigador durante 10 años. Programador independiente desde hace poco más de 1 año.</p>
+                <h2>Químico || Desarrollador Java y Web</h2>
+                <p>Experiencia en desarrollo de aplicaciones y sitios web, así como en docencia universitaria, investigación y análisis físico-químicos.</p>
                 <div class="iconos">
                     <a href="https://www.linkedin.com/in/gabrielordazgz/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" /></a>
                     <a href="https://github.com/gjordazg" target="_blank"><img src="https://img.icons8.com/color/48/000000/github--v1.png" /></a>
@@ -29,10 +29,7 @@
                     <div class="tooltip"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
                         <div id="p1" class="tooltiptext">+54(911)2165-3958</div>
                     </div>
-
-                    <div class="tooltip"><img src="https://img.icons8.com/color/48/000000/gmail.png" />
-                        <div id="p2" class="tooltiptext">gjordazg@gmail.com</div>
-                    </div>
+                    <a href="mailto:gjordazg@gmail.com" class="tooltip"><img src="https://img.icons8.com/color/48/000000/gmail.png" /></a>
                     <a href="myCV.pdf" target="_blank"><img src="https://img.icons8.com/color/48/000000/pdf.png" /></a>
                 </div>
             </div>
@@ -43,7 +40,7 @@
     </aside>
     <main>
         <div class="habilidades">
-            <h2>Habilidades</h2>
+            <h1>Habilidades</h1>
             <div class="contenedor_habilidades">
                 <!--<img src="https://img.icons8.com/color/96/000000/developer.png" />-->
                 <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" />
@@ -55,48 +52,79 @@
                 <img src="https://img.icons8.com/color/96/000000/html-5.png" />
                 <img src="https://img.icons8.com/color/96/000000/css3.png" />
                 <img src="https://img.icons8.com/color/96/000000/git.png" />
-                
                 <img src="https://img.icons8.com/color/96/000000/statistics.png" />
                 <img src="https://img.icons8.com/color/96/000000/classroom.png" />
             </div>
         </div>
-        <div class="contenedor experiencia">
-            <span>
-                <h2>Experiencia</h2>
-            </span>
-            <div class="programdor">
-                <div class="freelance">
-                    <h3>Programador Web</h3>
+        <div class="experiencia">
+            <h1>Experiencia</h1>
+            <div class="contenedor_experiencia">
+                <div class="columna_100_33 programdor">
+                    <h2>Programador Web</h2>
                     <p>Soy desarrollador freelance de <a href="#galeria_IT">sitios web</a> estáticos y dinámicos, así como de <a href="#galeria_IT">aplicaciones</a> varias.</p>
-                </div>
-                <div id="galeria_IT" class="galeria_web">
-                    <!-- En esta area debe incorporarse una galeria (capturas de pantalla) con imagenes de los sitios web
+                    <div id="galeria_IT">
+                        <!-- En esta area debe incorporarse una galeria (capturas de pantalla) con imagenes de los sitios web
                      y aplicaciones desarrolados-->
+                    </div>
                 </div>
-            </div>
-            <div class="quimico">
-                <div class="docente">
-                    <h3>Profesor</h3>
-                    <p>Fui profesor universitario de asignaturas como química general y química orgánica, así como en laboratorios y seminarios de grado.</p>
+                <div class="columna_100_33 docente">
+                    <h2>Profesor</h2>
+                    <p>Fui profesor universitario de <a href="#subject">asignaturas</a> como química general y química orgánica, así como en laboratorios y seminarios de grado.</p>
+                    <div id="subject">
+                        <!-- En esta area debe incorporarse una galeria (capturas de pantalla) con clases y material de estudio-->
+                    </div>
                 </div>
-                <div class="investigador">
-                    <h3>Investigador</h3>
-                    <p>Llevé a cabo investigación experimental en las áreas de <a>Productos Naturales</a>, <a>Lípidos</a> y <a>Enseñanza de la química</a>.</p>
+                <div class="columna_100_33 investigador">
+                    <h2>Investigador</h2>
+                    <p>Llevé a cabo investigaciones en las áreas de <a href="#NatProd">Productos Naturales</a>, <a href="#oil_fat">Lípidos</a> y <a href="#teaching">Educación</a>.</p>
+                    <div id="NatProd">
+                        <!-- En esta area debe incorporarse lista de publicaciones-->
+                    </div>
+                    <div id="oil_fat">
+                        <!-- En esta area debe incorporarse lista de publicaciones-->
+                    </div>
+                    <div id="teaching">
+                        <!-- En esta area debe incorporarse lista de publicaciones-->
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="contenedor formacion">
-            <span>
-                <h2>Formación</h2>
-            </span>
+        <div class="formacion">
+            <h1>Formación</h1>
+            <div class="contenedor_formacion">
+                <div class="quimico">
+                    <h2>Licenciatura en Química</h2>
+                    <h3>Universidad de Oriente, Venezuela</h3>
+                    <div class="info">
+                        <p>Egresado con un promedio de 8 puntos (escala 1-10) y tesis aprobada con <em>Mención Honorífica</em>, obteniendo el <em>primer</em> puesto en mi promoción. Fui miembro de la <em>Orquesta Típica del Estado Sucre</em> y del <em>Club de Actividades Subacuáticas (CASUB </em>). También trabajé como <em>Ayudante de Oficina</em> (2 semestres) y <em>Auxiliar Técnico de Laboratorio</em> (7 semestres).</p>
+                    </div>
+                </div>
+                <div class="java">
+                    <h2>Carrera Java</h2>
+                    <h3>Educación IT, Argentina</h3>
+                    <div class="info">
+                        <ul>
+                            <li>Curso <strog>Java Web API</strog> (marzo,2020 - abril,2020)</li>
+                            <li>Curso <strog>Análisis Funcional</strog> (marzo,2020)</li>
+                            <li>Curso <strog>Java Standard Web Programming, J2SE</strog> (diciembre,2019 - enero,2020)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cursos">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <div class="contenedor_footer">
-            <div class="contacto">
-                <a href="https://icons8.com/icon/13930/linkedin">Icons by Icons8</a>
-            </div>
+                <address> Este página fue diseñada y editada por <strong>Gabriel Ordaz</strong>, 2020.
+                <br/>
+                Buenos Aires, Capital Federal, Argentina<br/>
+                Fuente de los iconos: 
+                <a href="https://icons8.com/icon/13930/linkedin">Icons8</a>
+                </address>
         </div>
 
     </footer>
