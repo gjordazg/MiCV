@@ -4,10 +4,17 @@
     padding: 0;
 }
 
+/* -------------------------
+----- Estilo vista mobile -----
+       ------------------------- */
+
 body {
     width: 100%;
     height: auto;
 }
+
+/* **HEADER** */
+/**************/
 
 header {
     display: block;
@@ -26,23 +33,37 @@ header {
     text-align: center;
 }
 
-.columna_100_25 {
-    width: 100%;
-    height: 40%;
-    padding: 5px 5px;
+#boton{
+    position: absolute;
+    height: 35px;
+    width: 50px;
+    right: 10px;
+    top: 10px;
+    font-size: 0.95em;
+    background-color: black;
+    color: azure;
+    border-radius: 5px 10px;
 }
 
-.columna_100_75 {
+/* Seccion Foto */
+.columna_100_25 {
     width: 100%;
-    height: 60%;
-    padding: 5px 15px;
+    height: 50%;
 }
 
 .foto {
     width: auto;
-    height: 100%;
+    height: 180px;
     border: 2px solid red;
     border-radius: 50%;
+    margin: 9px 0;
+}
+
+/* Seccion Presentacion */
+.columna_100_75 {
+    width: 100%;
+    height: 50%;
+    padding: 0 5px;
 }
 
 .columna_100_75 h1 {
@@ -54,7 +75,7 @@ header {
 .columna_100_75 h2 {
     font-family: ;
     font-size: 1.7em;
-    height: 25%;
+    height: 30%;
 }
 
 .columna_100_75 p {
@@ -65,38 +86,27 @@ header {
     padding: 10px 0 0;
 }
 
+.datos{
+    height: 20%;
+}
+
 /* Iconos */
 
-.iconos {
-    height: 25%;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.iconos img,
-div. img {
-    width: 80%;
-    height: auto;
-}
-
-.tooltiptext {
-    position: absolute;
-    visibility: hidden;
+.iconos{
+    display: none;
 }
 
 
-/* MAIN */
+/* **MAIN** */
+/************/
 
 
 main h1 {
     color: firebrick;
-    font-size: 2.2em;
+    font-size: 2.0em;
     padding: 10px;
     background-color: silver;
-    text-shadow: -2px 2px 6px black;
+    text-shadow: -1px 1px 8px black;
 }
 
 main h2 {
@@ -119,6 +129,7 @@ main p {
     padding: 0 20px 5px;
 }
 
+/*Seccion Habilidades*/
 .contenedor_habilidades {
     display: flex;
     flex-wrap: wrap;
@@ -131,13 +142,17 @@ main p {
     width: 22%;
     height: auto;
 }
+
+/*Seccion Formacion*/
 .java ul{
     height: auto;
     font-size: 0.9em;
     margin-left: 20px;
     padding: 0 20px;
 }
-/* FOOTER */
+
+/* **FOOTER** */
+/**************/
 
     footer {
         display: block;
@@ -145,7 +160,7 @@ main p {
         height: auto;
         background-color: black;
         color: snow;
-        text-shadow: -2px 2px 9px #ff000f;
+        text-shadow: -1px 1px 8px #ff000f;
         text-align: center;
         font-size: 0.9em;
     }
@@ -157,9 +172,14 @@ main p {
     }
 
 
+/* -------------------------
+----- Estilo vista PC -----
+       ------------------------- */
+
 @media only screen and (min-width: 600px) {
 
-    /* HEADER GENERAL */
+/* **HEADER** */
+/**************/
 
     header {
         height: 300px;
@@ -170,65 +190,64 @@ main p {
         flex-wrap: wrap;
     }
 
-    /* Lado de la foto */
-
+    /* Seccion Foto */
     .columna_100_25 {
         width: 25%;
         height: 100%;
         display: inline;
-        padding: 10px 15px;
     }
 
     .foto {
-        width: 80%;
-        height: 100%;
-        margin: 0 10%;
+        width: auto;
+        height: 80%;
+        margin: 10% 5%;
     }
 
-    /* Lado de la descripcion */
-
+    /* Seccion Presentacion */
     .columna_100_75 {
         width: 75%;
         height: 100%;
         display: inline;
-        padding: 20px;
+        padding: 10px;
     }
 
     .columna_100_75 h1 {
-        font-size: 3.5em;
-        height: 30%;
+        font-size: 3.0em;
+        height: 25%;
         padding: 10px;
     }
 
     .columna_100_75 h2 {
-        font-size: 2.2em;
-        height: 20%;
-        padding: 5px;
+        font-size: 2.0em;
+        height: 26%;
+        padding: 10px;
+        resize: both;
     }
 
     .columna_100_75 p {
         font-family: ;
-        font-size: 1.1em;
-        height: 35%;
-        width: 90%;
-        padding: 10px 0;
-        margin: 0 5%;
+        font-size: 1.05em;
+        height: 30%;
+        padding: 20px 10px;
+        resize: both;
+    }
+    
+    .datos{
+        display: none;
     }
 
     /* Iconos */
-
     .iconos {
-        font-size: 2em;
-        height: 15%;
-        padding: 0 20%;
-        width: 100%;
+        height: 20%;
+        width: 60%;
         display: flex;
         text-align: center;
         justify-content: space-around;
+        margin: 0 20%;
     }
 
-    .iconos img {
-        width: 100%;
+    .iconos img, .tooltip img {
+        width: 80%;
         height: auto;
     }
 
@@ -238,7 +257,9 @@ main p {
     }
 
     .tooltiptext {
-        font-size: 0.6em;
+        position: absolute;
+        visibility: hidden;
+        font-size: 1.0em;
         z-index: 10;
         width: auto;
         height: auto;
@@ -266,22 +287,22 @@ main p {
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
-
-    /* MAIN */
-
+    
+/* **MAIN** */
+/************/
 
     main h1 {
-        font-size: 2.8em;
-        padding: 20px;
+        font-size: 2.6em;
+        padding: 10px;
     }
 
     main h2 {
-        font-size: 2em;
+        font-size: 2.0em;
         padding: 20px 20px 10px;
     }
 
     main h3 {
-        font-size: 1.5em;
+        font-size: 1.40em;
         padding: 0 20px 10px;
     }
 
@@ -289,11 +310,8 @@ main p {
         font-size: 1.1em;
     }
 
-    /* HABILIDADES */
-
+    /* Seccion Habilidades */
     .contenedor_habilidades {
-        /*visibility: hidden;
-        height: 0;*/
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -301,52 +319,36 @@ main p {
         margin: 0 15%;
     }
 
-    .habilidades:hover .contenedor_habilidades {
-        height: auto;
-        visibility: visible;
-    }
-
     .contenedor_habilidades img {
         padding: 20px;
-        max-width: 150px;
+        width: 16%;
+        height: auto;
+        resize: both;
     }
 
-    /* EXPERIENCIA */
-
+    /* Seccion Experiencia */
     .contenedor_experiencia {
-        /*visibility: hidden;
-        height: 0;*/
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center
     }
 
-    .experiencia:hover .contenedor_experiencia {
-        height: 100%;
-        visibility: visible;
-    }
-
     .columna_100_33 {
         width: 33.3%;
     }
 
-    /* FORMACION */
+    /* Seccion Formacion */
     .contenedor_formacion {
         display: flex;
         flex-wrap: wrap;
-        /*visibility: hidden;
-        height: 0;*/
+        justify-content: space-around;
     }
 
     .quimico,
     .java {
         width: 50%;
-    }
-
-    .formacion:hover .contenedor_formacion {
-        height: 100%;
-        visibility: visible;
+        text-align: center;
     }
 
     .quimico .info {
@@ -354,6 +356,7 @@ main p {
         margin: 0 5%;
         height: 0;
         visibility: hidden;
+        text-align: left;
     }
 
     .java .info {
@@ -361,6 +364,7 @@ main p {
         margin: 0 10%;
         height: 0;
         visibility: hidden;
+        text-align: left;
     }
 
     .quimico:hover .info,
@@ -369,12 +373,18 @@ main p {
         visibility: visible;
     }
 
-    /* FOOTER */
+/* **FOOTER** */
+/**************/
 
     .contenedor_footer {
         padding: 20px;
         font-size: 1.2em;
     }
-
+    
+    .contenedor_footer a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
 
 }
