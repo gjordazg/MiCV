@@ -33,7 +33,7 @@ header {
     text-align: center;
 }
 
-#boton{
+#boton {
     position: absolute;
     height: 35px;
     width: 50px;
@@ -53,10 +53,11 @@ header {
 
 .foto {
     width: auto;
-    height: 180px;
-    border: 2px solid red;
+    height: 97%;
+    border: 1px solid red;
     border-radius: 50%;
-    margin: 9px 0;
+    margin: 1% 0;
+
 }
 
 /* Seccion Presentacion */
@@ -86,13 +87,13 @@ header {
     padding: 10px 0 0;
 }
 
-.datos{
+.datos {
     height: 20%;
 }
 
 /* Iconos */
 
-.iconos{
+.iconos {
     display: none;
 }
 
@@ -100,13 +101,24 @@ header {
 /* **MAIN** */
 /************/
 
+.subtitulo{
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 main h1 {
     color: firebrick;
     font-size: 2.0em;
     padding: 10px;
-    background-color: silver;
     text-shadow: -1px 1px 8px black;
+    width: 90%;
+}
+
+.arrows{
+    display: none;
+    position: relative;
+    width: 10%;
 }
 
 main h2 {
@@ -138,39 +150,48 @@ main p {
     margin: 2% 5%
 }
 
-.contenedor_habilidades img{
+.contenedor_habilidades img {
     width: 22%;
     height: auto;
 }
 
 /*Seccion Formacion*/
-.java ul{
+.java ul {
     height: auto;
     font-size: 0.9em;
     margin-left: 20px;
     padding: 0 20px;
 }
 
+.hide{
+    display: none;
+}
+
 /* **FOOTER** */
 /**************/
 
-    footer {
-        display: block;
-        position: relative;
-        height: auto;
-        background-color: black;
-        color: snow;
-        text-shadow: -1px 1px 8px #ff000f;
-        text-align: center;
-        font-size: 0.9em;
-    }
+footer {
+    display: block;
+    position: relative;
+    height: auto;
+    background-color: black;
+    color: snow;
+    text-shadow: -1px 1px 8px #ff000f;
+    text-align: center;
+    font-size: 0.9em;
+}
 
-    .contenedor_footer {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
+.contenedor_footer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
 
+.contenedor_footer a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 600;
+}
 
 /* -------------------------
 ----- Estilo vista PC -----
@@ -178,8 +199,8 @@ main p {
 
 @media only screen and (min-width: 600px) {
 
-/* **HEADER** */
-/**************/
+    /* **HEADER** */
+    /**************/
 
     header {
         height: 300px;
@@ -231,8 +252,8 @@ main p {
         padding: 20px 10px;
         resize: both;
     }
-    
-    .datos{
+
+    .datos {
         display: none;
     }
 
@@ -246,7 +267,8 @@ main p {
         margin: 0 20%;
     }
 
-    .iconos img, .tooltip img {
+    .iconos img,
+    .tooltip img {
         width: 80%;
         height: auto;
     }
@@ -287,16 +309,33 @@ main p {
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
-    
-/* **MAIN** */
-/************/
+
+    /* **MAIN** */
+    /************/
 
     main h1 {
         font-size: 2.6em;
         padding: 10px;
     }
-
+   
+    .arrows{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: firebrick;
+        font-size: 2.0em;
+    }
+    
+    .arrows .up {
+        display: none;
+    }
+    
+    .arrows .down:active, arrows .up:active {
+        transform: scale(0.9);
+    }
+    
     main h2 {
+        
         font-size: 2.0em;
         padding: 20px 20px 10px;
     }
@@ -373,18 +412,13 @@ main p {
         visibility: visible;
     }
 
-/* **FOOTER** */
-/**************/
+    /* **FOOTER** */
+    /**************/
 
     .contenedor_footer {
         padding: 20px;
         font-size: 1.2em;
     }
-    
-    .contenedor_footer a{
-        text-decoration: none;
-        color: white;
-        font-weight: 600;
-    }
+
 
 }

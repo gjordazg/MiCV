@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <!--<script src="https://kit.fontawesome.com/0f157db75e.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/0f157db75e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -21,8 +21,10 @@
             <input id="boton" type="button" value="ENG" onclick="Traduccion()">
             <div class="columna_100_75">
                 <h1>Gabriel Ordaz</h1>
-                <h2>Químico || Desarrollador Java y Web</h2>
-                <p>Experiencia en desarrollo de aplicaciones y sitios web, así como en docencia universitaria, investigación y análisis físico-químicos.</p>
+                <h2 class="esp">Licenciado en Química || Desarrollador Java y Web</h2>
+                <h2 class="eng hide">BDS Chemistry || Java and Web Developer</h2>
+                <p class="esp">Experiencia en desarrollo de aplicaciones y sitios web, así como en docencia universitaria, investigación y análisis físico-químicos.</p>
+                <p class="eng hide">I can develop applications and web sites. I was a university chemistry professor and researcher. I have experience in several physical-chemical analyses.</p>
                 <div class="iconos">
                     <a href="https://www.linkedin.com/in/gabrielordazgz/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" /></a>
                     <a href="https://github.com/gjordazg" target="_blank"><img src="https://img.icons8.com/color/48/000000/github--v1.png" /></a>
@@ -40,8 +42,12 @@
         </div>
     </header>
     <main>
-        <div class="habilidades">
-            <h1 id="traducir">Habilidades</h1>
+        <section class="habilidades">
+            <div class="subtitulo">
+                <h1 class="esp">Habilidades</h1>
+                <h1 class="eng hide">Skills</h1>
+                <div class="arrows" onclick="downUp()"><i class="fas fa-angle-up up"></i><i class="fas fa-angle-down down"></i></div>
+            </div>
             <div class="contenedor_habilidades">
                 <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" alt="Java" title="Java" />
                 <img src="https://img.icons8.com/color/96/000000/tomcat.png" alt="Tomcat" title="Tomcat" />
@@ -58,30 +64,40 @@
                 <img src="https://img.icons8.com/color/96/000000/statistics.png" alt="Statistics" title="Estadística" />
                 <img src="https://img.icons8.com/color/96/000000/classroom.png" alt="Teaching" title="Enseñanza" />
                 <img src="https://img.icons8.com/color/96/000000/test-tube.png" alt="Chemistry" title="Química" />
-                <img src="https://img.icons8.com/color/96/000000/multi-edit.png"alt="Edit" title="Composición" />
+                <img src="https://img.icons8.com/color/96/000000/multi-edit.png" alt="Edit" title="Composición" />
             </div>
-        </div>
-        <div class="experiencia">
-            <h1>Experiencia</h1>
+        </section>
+        <section class="experiencia">
+            <div class="subtitulo">
+                <h1 class="esp">Experiencia</h1>
+                <h1 class="eng hide">Experience</h1>
+                <div class="arrows"><i class="fas fa-angle-up up"></i><i class="fas fa-angle-down down"></i></div>
+            </div>
             <div class="contenedor_experiencia">
                 <div class="columna_100_33 programdor">
-                    <h2>Programador</h2>
-                    <p>Soy desarrollador freelance de <a href="#galeria_IT">sitios web</a> estáticos y dinámicos, así como de <a href="#galeria_IT">aplicaciones</a> varias.</p>
+                    <h2 class="esp">Desarrollador</h2>
+                    <h2 class="eng hide">Developer</h2>
+                    <p class="esp">... de algunos <a href="#galeria_IT">sitios web</a> estáticos y dinámicos, participando en el diseño, codificación y testeo de los productos tanto en el frontend como en el backend.</p>
+                    <p class="eng hide">... ...of some static and dynamic <a href="#galeria_IT">websites</a>. I have participated in the design, coding, and testing of the products, either frontend or backend.</p>
                     <div id="galeria_IT">
                         <!-- En esta area debe incorporarse una galeria (capturas de pantalla) con imagenes de los sitios web
                      y aplicaciones desarrolados-->
                     </div>
                 </div>
                 <div class="columna_100_33 docente">
-                    <h2>Profesor</h2>
-                    <p>Fui profesor universitario de <a href="#subject">asignaturas</a> como química general y química orgánica, así como en laboratorios y seminarios de grado.</p>
+                    <h2 class="esp">Profesor</h2>
+                    <h2 class="eng hide">Professor</h2>
+                    <p class="esp">... en el <em>Departamento de Quimica</em>, <em>Universidad de Oriente</em>, Venezuela, en <a href="#subject">asignaturas</a> como química general, química orgánica, laboratorios y seminarios de grado.</p>
+                    <p class="eng hide">... at <em>Chemistry Department</em>, <em>Universidad de Oriente</em>, Venezuela, on <a href="#subject">subjects</a> as General Chemistry, Organic Chemistry, Laboratories, and Seminars.</p>
                     <div id="subject">
                         <!-- En esta area debe incorporarse una galeria (capturas de pantalla) con clases y material de estudio-->
                     </div>
                 </div>
                 <div class="columna_100_33 investigador">
-                    <h2>Investigador</h2>
-                    <p>Llevé a cabo investigaciones en las áreas de <a href="#NatProd">Productos Naturales</a>, <a href="#oil_fat">Lípidos</a> y <a href="#teaching">Educación</a>.</p>
+                    <h2 class="esp">Investigador</h2>
+                    <h2 class="eng hide">Researcher</h2>
+                    <p class="esp">... en las áreas de <a href="#NatProd">Productos Naturales</a>, <a href="#oil_fat">Alimentos</a> y <a href="#teaching">Educación</a>, participando en el diseño, ejecución, y dirección de los proyectos, así como en el análisis y comunicación de resultados.</p>
+                    <p class="eng hide">... in the <a href="#NatProd">Natural Products</a>, <a href="#oil_fat">Food</a>, and <a href="#teaching">Education</a> areas. I have participated in the design, execution, management, and guidance of the projects. Furthermore, I have collaborated with the analysis and communication of results.</p>
                     <div id="NatProd">
                         <!-- En esta area debe incorporarse lista de publicaciones-->
                     </div>
@@ -93,45 +109,56 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="formacion">
-            <h1>Formación</h1>
+        </section>
+        <section class="formacion">
+            <div class="subtitulo">
+                <h1 class="esp">Formación</h1>
+                <h1 class="eng hide">Education</h1>
+                <div class="arrows"><i class="fas fa-angle-up up"></i><i class="fas fa-angle-down down"></i></div>
+            </div>
             <div class="contenedor_formacion">
                 <div class="quimico">
-                    <h2>Licenciatura en Química</h2>
+                    <h2 class="esp">Licenciatura en Química</h2>
+                    <h2 class="eng hide">Bachelor's Degree in Science (Chem)</h2>
                     <h3>Universidad de Oriente, Venezuela</h3>
                     <div class="info">
-                        <p>Egresé como el <em>primero</em> de mi promoción, con un promedio de <em>8 puntos</em> (escala 1-10). Mi trabajo de pregrado fue aprobado con <em>Mención Honorífica</em>. Fui miembro de la <em>Orquesta Típica del Estado Sucre</em> y del <em>Club de Actividades Subacuáticas</em> (CASUB). También fui <em>Ayudante de Oficina</em> (2 semestres) y <em>Auxiliar Técnico de Laboratorio</em> (7 semestres).</p>
+                        <p class="esp">Egresé como el <em>primero</em> de mi promoción, con un promedio de <em>8 puntos</em> (escala 1-10). Mi trabajo de pregrado fue aprobado con <em>Mención Honorífica</em>. Fui miembro de la <em>Orquesta Típica del Estado Sucre</em> y del <em>Club de Actividades Subacuáticas</em> (CASUB). También fui <em>Ayudante de Oficina</em> (2 semestres) y <em>Auxiliar Técnico de Laboratorio</em> (7 semestres).</p>
+                        <p class="eng hide">I was the <em>first</em> of my promotion, with an average of <em>8 points</em> (scale 1-10). My thesis was approved with <em>Honorific Mention</em>. I was a member of <em>The Typical Orchest form Sucre State</em> and <em>The Subaquatic Activities Club</em> (SUBAC). Furthermore, I worked as <em>Secretary Assistant</em> (2 semesters) and <em>Laboratory Assistant</em> (7 semesters).</p>
                     </div>
                 </div>
                 <div class="java">
-                    <h2>Carrera Java</h2>
+                    <h2 class="esp">Carrera Java</h2>
+                    <h2 class="eng hide">Java Career</h2>
                     <h3>Educación IT, Argentina</h3>
                     <div class="info">
-                        <ul>
-                            <li>Curso <strog>Java Web API</strog> (marzo,2020 - abril,2020)</li>
-                            <li>Curso <strog>Análisis Funcional</strog> (marzo,2020)</li>
-                            <li>Curso <strog>Java Standard Web Programming, J2SE</strog> (diciembre,2019 - enero,2020)</li>
-                        </ul>
+                        <p class="esp">
+                            <strong>Java Web API</strong> (marzo, 2020 - abril, 2020).<br />
+                            <strong>Análisis Funcional</strong> (marzo, 2020).<br />
+                            <strong>Java Standard Web Programming, J2SE</strong> (diciembre, 2019 - enero, 2020).<br />
+                        </p>
+                        <p class="eng hide">
+                            <strong>Java Web API</strong> (March,2020 - April, 2020).<br />
+                            <strong>Functional Analysis</strong> (March, 2020).<br />
+                            <strong>Java Standard Web Programming, J2SE</strong> (December, 2019 - January, 2020).<br />
+                        </p>
                     </div>
                 </div>
-                <div class="cursos">
-                    <h3></h3>
-                    <p></p>
-                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="contenedor_footer">
-            <address> Este página fue diseñada y editada por <strong>Gabriel Ordaz</strong>, 2020.
-                <br />
-                Buenos Aires, Capital Federal, Argentina<br />
+            <address>
+                <p class="esp">Este página fue diseñada y desarrollada por <strong>Gabriel Ordaz</strong>, 2020.
+                    <br />
+                    Buenos Aires, Argentina<br /></p>
+                <p class="eng hide">This website was designed and developed by <strong>Gabriel Ordaz</strong>, 2020.
+                    <br />
+                    Buenos Aires, Argentina<br /></p>
             </address>
-            <p>Fuente de los iconos: <a href="https://icons8.com" target="_blank">icons8.com</a></p>
+            <p class="esp">Fuente de los iconos: <a href="https://icons8.com" target="_blank">icons8.com</a></p>
+            <p class="eng hide">Iconos by: <a href="https://icons8.com" target="_blank">icons8.com</a></p>
         </div>
     </footer>
     <script src="funciones.js"></script>
-</body>
-
-</html>
+</body></html>
