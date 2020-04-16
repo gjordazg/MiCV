@@ -34,7 +34,7 @@ header {
 }
 
 #boton {
-    position: absolute;
+    position: fixed;
     height: 35px;
     width: 50px;
     right: 10px;
@@ -156,12 +156,6 @@ main p {
 }
 
 /*Seccion Formacion*/
-.java ul {
-    height: auto;
-    font-size: 0.9em;
-    margin-left: 20px;
-    padding: 0 20px;
-}
 
 .hide{
     display: none;
@@ -313,24 +307,26 @@ footer {
     /* **MAIN** */
     /************/
 
+    .subtitulo{
+        margin:2%;
+        border-radius: 5px;
+        box-shadow: -2px 2px 3px black;
+    }
+    
     main h1 {
         font-size: 2.6em;
-        padding: 10px;
+        padding: 20px 10px;
     }
    
     .arrows{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
         color: firebrick;
         font-size: 2.0em;
+        text-align: center;
+        padding: 25px 0;
     }
     
-    .arrows .up {
-        display: none;
-    }
-    
-    .arrows .down:active, arrows .up:active {
+    .arrows:active {
         transform: scale(0.9);
     }
     
@@ -348,14 +344,27 @@ footer {
     main p {
         font-size: 1.1em;
     }
-
-    /* Seccion Habilidades */
+    
+    
+    /* Seccion Habilidades */  
+    
     .contenedor_habilidades {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: none;
         width: 70%;
         margin: 0 15%;
+    }
+    
+    .contenedor_habilidades.show, 
+    .contenedor_experiencia.show,
+    .contenedor_formacion.show{
+        animation-name: aparecer;
+        animation-duration: 1s;
+        display: flex;
+    }
+    
+    @keyframes aparecer{
+        from{opacity: 0;}
+        to{opacity: 1;}
     }
 
     .contenedor_habilidades img {
@@ -367,7 +376,7 @@ footer {
 
     /* Seccion Experiencia */
     .contenedor_experiencia {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center
@@ -379,37 +388,23 @@ footer {
 
     /* Seccion Formacion */
     .contenedor_formacion {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .quimico,
-    .java {
+    .columna_100_50 {
         width: 50%;
         text-align: center;
+        padding-bottom: 20px;
     }
 
-    .quimico .info {
-        width: 190%;
-        margin: 0 5%;
-        height: 0;
-        visibility: hidden;
+    .info {
+        display: block;
+        position: relative;
+        width: 100%;
         text-align: left;
-    }
-
-    .java .info {
-        width: 80%;
-        margin: 0 10%;
-        height: 0;
-        visibility: hidden;
-        text-align: left;
-    }
-
-    .quimico:hover .info,
-    .java:hover .info {
-        height: auto;
-        visibility: visible;
+        margin: 10px 0;
     }
 
     /* **FOOTER** */
