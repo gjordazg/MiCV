@@ -43,6 +43,7 @@ header {
     background-color: black;
     color: azure;
     border-radius: 5px 10px;
+    z-index: 1000;
 }
 
 /* Seccion Foto */
@@ -53,10 +54,10 @@ header {
 
 .foto {
     width: auto;
-    height: 97%;
+    height: 100%;
     border: 1px solid red;
     border-radius: 50%;
-    margin: 1% 0;
+    margin: auto;
 
 }
 
@@ -68,19 +69,16 @@ header {
 }
 
 .columna_100_75 h1 {
-    font-family: ;
-    font-size: 2.5em;
+    font-size: 2.3em;
     height: 25%;
 }
 
 .columna_100_75 h2 {
-    font-family: ;
-    font-size: 1.7em;
+    font-size: 1.5em;
     height: 30%;
 }
 
 .columna_100_75 p {
-    font-family: ;
     font-size: 0.8em;
     height: 25%;
     width: 100%;
@@ -92,16 +90,14 @@ header {
 }
 
 /* Iconos */
-
 .iconos {
     display: none;
 }
 
-
 /* **MAIN** */
 /************/
 
-.subtitulo{
+.subtitulo {
     background-color: silver;
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +111,7 @@ main h1 {
     width: 90%;
 }
 
-.arrows{
+.arrows {
     display: none;
     position: relative;
     width: 10%;
@@ -151,13 +147,13 @@ main p {
 }
 
 .contenedor_habilidades img {
-    width: 22%;
+    min-width 40px;
+    max-width: 70px;
     height: auto;
 }
 
 /*Seccion Formacion*/
-
-.hide{
+.hide {
     display: none;
 }
 
@@ -240,7 +236,6 @@ footer {
     }
 
     .columna_100_75 p {
-        font-family: ;
         font-size: 1.05em;
         height: 30%;
         padding: 20px 10px;
@@ -286,7 +281,7 @@ footer {
         color: black;
         text-shadow: -2px 2px 9px #ff000f;
         top: 98%;
-        left: 52%;
+        right: 32%;
     }
 
     .tooltiptext::after {
@@ -307,31 +302,30 @@ footer {
     /* **MAIN** */
     /************/
 
-    .subtitulo{
-        margin:2%;
+    .subtitulo {
+        margin: 2%;
         border-radius: 5px;
         box-shadow: -2px 2px 3px black;
     }
-    
+
     main h1 {
         font-size: 2.6em;
         padding: 20px 10px;
     }
-   
-    .arrows{
+
+    .arrows {
         display: block;
         color: firebrick;
         font-size: 2.0em;
         text-align: center;
         padding: 25px 0;
     }
-    
+
     .arrows:active {
         transform: scale(0.9);
     }
-    
+
     main h2 {
-        
         font-size: 2.0em;
         padding: 20px 20px 10px;
     }
@@ -344,32 +338,35 @@ footer {
     main p {
         font-size: 1.1em;
     }
-    
-    
-    /* Seccion Habilidades */  
-    
+
+    /* Seccion Habilidades */
     .contenedor_habilidades {
         display: none;
         width: 70%;
         margin: 0 15%;
     }
-    
-    .contenedor_habilidades.show, 
+
+    .contenedor_habilidades.show,
     .contenedor_experiencia.show,
-    .contenedor_formacion.show{
+    .contenedor_formacion.show {
         animation-name: aparecer;
         animation-duration: 1s;
         display: flex;
     }
-    
-    @keyframes aparecer{
-        from{opacity: 0;}
-        to{opacity: 1;}
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     .contenedor_habilidades img {
         padding: 20px;
-        width: 16%;
+        min-width 80px;
+        max-width: 115px;
         height: auto;
         resize: both;
     }
@@ -414,6 +411,4 @@ footer {
         padding: 20px;
         font-size: 1.2em;
     }
-
-
 }

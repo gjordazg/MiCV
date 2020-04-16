@@ -1,5 +1,5 @@
-const box1 = document.getElementsByTagName("i");
-let box2 = document.getElementsByClassName("contenedor");
+var box1 = document.getElementsByTagName("i");
+var box2 = document.getElementsByClassName("contenedor");
 
 for (let i = 0; i < box1.length; i++) {
     box1[i].addEventListener('click', downUp);
