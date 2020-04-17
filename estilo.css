@@ -200,6 +200,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+    
+    #boton:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        box-shadow: -1px 1px 3px white;
+        background-color: rgba(255, 0, 0, 0.6);
+    }
 
     /* Seccion Foto */
     .columna_100_25 {
@@ -256,10 +263,19 @@ footer {
         margin: 0 20%;
     }
 
-    .iconos img,
-    .tooltip img {
+    .iconos img {
         width: 80%;
         height: auto;
+    }
+    
+    .iconos img:hover{
+        transform: scale(1.1);
+        box-shadow: -1px 1px 3px white;
+        border-radius: 25%;
+    }
+    
+    .iconos img:active{
+        transform: scale(0.95);
     }
 
     .tooltip {
@@ -280,19 +296,38 @@ footer {
         border-radius: 15px;
         color: black;
         text-shadow: -2px 2px 9px #ff000f;
-        top: 98%;
-        right: 32%;
     }
 
-    .tooltiptext::after {
+    .text1.{
+        top: 100%;
+        right: 24%;
+    }
+    
+    .text2{
+        top: 65%;
+        right: 24%;
+    }
+    
+    .text1::after {
         content: " ";
         position: absolute;
         bottom: 100%;
-        left: 80%;
+        left: 20%;
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
         border-color: transparent transparent gold transparent;
+    }
+    
+    .text2::after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 80%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: gold transparent transparent transparent;
     }
 
     .tooltip:hover .tooltiptext {
@@ -323,6 +358,11 @@ footer {
 
     .arrows:active {
         transform: scale(0.9);
+    }
+    
+    .arrows:hover {
+        text-shadow: 0 0 4px red;
+        transform: scale(1.05);
     }
 
     main h2 {
